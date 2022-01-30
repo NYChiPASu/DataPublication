@@ -371,9 +371,43 @@
       </div>
     </div>
   </div>
+  <!-- show time -->
+  <div class="container mt-10" id = "currentminute">
+      <p id="minute">The current minute will display here when click the button below.</p>
+      <button type="button" class="btn btn-secondary" onclick="showMinute()">Click</button>
+
+  </div>
+  <!-- button that makes an element disappear or show up-->
+  <div class="container mt-5" >
+      <img id="test" src="callalily.jpg" class ="img-fluid" alt="show and hide test">
+      <button type="button" class="btn btn-secondary" onclick="show_hide()">Show and Hide</button>
+
+  </div>
+
+  <script>
+      var x;
+      function show_hide(){
+          if(x == 1){
+              document.getElementById("test").style.display="inline";
+              return x=0;
+          }
+          else{
+              document.getElementById("test").style.display="none";
+              return x=1;
+          }
+      }
 
 
+  </script>
 
+
+  <script>
+      function showMinute(){
+          var currentMinute = new Date().getMinutes();
+          console.log(currentMinute);
+          document.getElementById("minute").innerText=currentMinute;
+      }
+  </script>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
     <script src="https://api.mapbox.com/mapbox-gl-js/v2.3.1/mapbox-gl.js"></script>

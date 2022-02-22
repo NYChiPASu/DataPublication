@@ -1,3 +1,18 @@
 section{
     padding:50px 0;
 }
+
+#map {
+    height: 400px;
+    width: 100%;
+}
+
+p::first-letter{
+    font-size:3rem;
+    float:left;
+    color: black;
+}
+
+th{
+    text-align: left; width: 30%;
+}

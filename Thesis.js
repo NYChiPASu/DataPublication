@@ -109,8 +109,8 @@ function loadXML(){
 
 function XMLrequest(link){
     var connect = new XMLHttpRequest();
-    connect.onreadystatechange=function(){
-        if (this.readyState== 4 && this.status == 200){
+    connect.onreadystatechange = function(){
+        if (this.readyState == 4 && this.status == 200){
             listTexts(this.responseXML);
         };
     };
@@ -120,18 +120,18 @@ function XMLrequest(link){
 }
 
 function listTexts(sourceXML){
-    document.getElementById('projectTitle').innerText = sourceXML.getElementByTagName('metadata')[0].children.innerHTML;
-    document.getElementById('setTitle').innerText= sourceXML.getElementsByTagName('set')[0].children[4].children[0].innerHTML;
-    document.getElementById('setDescription').innerText=sourceXML.getElementByTagName('set')[0].children[4].innerHTML;
+    document.getElementById('projectTitle').innerText = sourceXML.getElementsByTagName('metadata')[0].children[1].innerHTML;
+    document.getElementById('setTitle').innerText= sourceXML.getElementsByTagName('set')[0].children[3].children[0].innerHTML;
+    document.getElementById('setDescription').innerText=sourceXML.getElementsByTagName('set')[0].children[4].innerHTML;
     var licenseText = document.getElementById('license');
-    licenseText.innerText=sourceXML.getElementByTagName('availability')[0].children[0].innerHTML;
-    licenseText.setAttribute('href',sourceXML.getElementByTagName('availability')[0].children[0].attributes[0].nodeValue);
+    licenseText.innerText=sourceXML.getElementsByTagName('availability')[0].children[0].innerHTML;
+    licenseText.setAttribute('href', sourceXML.getElementsByTagName('availability')[0].children[0].attributes[0].nodeValue);
     
 
 
     //select,parse and display the data
     console.log(sourceXML);
-    var textList = sourceXML.getElementByTagName('text');
+    var textList = sourceXML.getElementsByTagName("text");
     console.log(textList);
     for (i=0; i<textList.length; i++){
         var tr = document.createElement('tr');

@@ -21,11 +21,12 @@
     
     <!-- sections for each group work -->
     <!-- although the border-0,there this still some area between h1 and carousel -->
-    <h5 class="display-2 text-sm-center bi-text-center bg-light py-0 border-5" >Thesis</h5>
-    
+    <h6 class="display-2 text-sm-center bi-text-center bg-light py-0 border-5" >Thesis</h6>
+    <!-- button: back to top -->
+    <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
 <!-- navbar1 -->
     <!-- href subject to changes -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-muted">
+    <nav class="navbar navbar-expand-md navbar-light bg-muted">
         <div class="container-fluid">
           <a class="navbar-brand" href="#">Navbar</a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
@@ -34,95 +35,209 @@
           <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
             <div class="navbar-nav">
               <a class="nav-link active" aria-current="page" href="#">Home</a>
-              <a class="nav-link" href="#selfintro">Self-intro</a>
-              <a class="nav-link" href="#accordionPanelsStayOpenExample">Section1-the accordion</a>
-              <a class="nav-link" href="#Grid">Section2-the Grid</a>
-              <a class="nav-link" href="#Section3-undefined">Section3-week6</a>
-              <a class="nav-link" href="#Section4_Map">Section4-MAP_API</a>
-              <a class="nav-link" href="#Section5_Wiki">Section5-Wiki_API</a>
-              <a class="nav-link" href="#Section6_OCHRE">Section6-OCHRE_API</a>
-
-
+              <a class="nav-link" href="#welcome">Proposal</a>
+              <a class="nav-link" href="#intro">Introduction</a>
+              <a class="nav-link" href="#cards">Novels</a>
+              <a class="nav-link" href="#accordionPanelsStayOpenExample">Accordion</a>
+              <a class="nav-link" href="#code">CodeReview</a>
+              <a class="nav-link" href="#Section4_Map">MAP_API</a>
+              <a class="nav-link" href="#Section5_Wiki">Wiki_API</a>
 
             </div>
           </div>
         </div>
       </nav>
-    
-      <!-- section for self-introduction -->
-    <section id="selfintro">
-        <div class="container-lg my-5">
-            <div class="row justify-content-center">
-                <!-- for small screen , the default in the center, when the screen reaches the medium point, it's on the left -->
-                <div class="co-md-5 text-center text-md-start">
-                    <h1>
-                        <div class="text-center">SelfIntro</div>
-                        <div class="text-muted">lorem</div>
-                    </h1>
-                    <p class="lead my-4 text-muted" id="DropCap">Lorem ipsum dolor sit amet,</p>
-                    <!-- #go to personal website when click -->
-                    <a href="#the hyperlink to personal website" class="btn btn-secondary brn-lg">Personal Site</a>
+      <!-- carousel -->
+      <section id="carousel">
+        <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="Winter1.jpeg" class="d-block w-100" alt="slide1 for part1">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Welcome to My Site for DIGS MA Thesis</h5>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat necessitatibus provident ratione, maxime eveniet quae culpa inventore sed ut architecto beatae ipsam ullam, ipsum numquam incidunt error, aut minus officia exercitationem neque? Ab sunt dolor sit, quasi vitae omnis animi hic officia voluptas temporibus fugiat blanditiis officiis consectetur, totam cum?</p>
                 </div>
-                <!-- display none on a small screen, display as block when reach the medium breakpoint-->
-                <div class="col-md-5 text-center d-none d-md-block">
-                    <img class = "img-fluid" src="callalily.jpg" alt="MyPhoto">
+              </div>
+              <div class="carousel-item">
+                <img src="Winter2.jpeg" class="d-block w-100" alt="slide2 for part2">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Second slide label for section2</h5>
+                  <p>Some representative placeholder content for the second slide.</p>
                 </div>
+              </div>
+              <div class="carousel-item">
+                <img src="Winter3.jpeg" class="d-block w-100" alt="slide3 for part3">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Third slide label for section3</h5>
+                  <p>Some representative placeholder content for the third slide.</p>
+                </div>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+      </section>
+      
+      <!-- Say Hi to my audience -->
+      <section id="welcome">
+        <div class="container-fluid padding">
+          <div class="row welcome text-center">
+            <div class="col-12">
+              <h1 class="display-4">Thesis Proposal</h1>
+              <hr>
+              <div class="col-12">
+                <p class="lead">Thanks for visiting my site. Here is the thesis proposal. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Pariatur fugiat vitae reiciendis expedita molestiae architecto, sequi laudantium, temporibus rem impedit adipisci dolores eligendi accusamus labore a optio velit. A, quae!</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      
+
+      <!-- Intro to Thomas Hardy -->
+      <section class="p-5" id="intro">
+        <div class="container">
+            <div class="row align-items-center justify-content-between">
+                <div class="col-md">
+                    <img src="thomas-hardy-393744_1280.jpg" class="img-fluid" alt="Thomas Hardy">
+                </div>
+                <div class="col-md p-5">
+                    <h2>Introduction to Thomas Hardy</h2>
+                    <p class="lead">
+                      Why I choose to analyze his works. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eum porro, accusantium placeat aut deserunt inventore eius voluptatum dolorum quod tenetur consectetur expedita repudiandae, cumque voluptates, fugiat odit modi dolore earum.
+                      </p>
+                    <a href="https://en.wikipedia.org/wiki/Thomas_Hardy" class="btn btn-light mt-3">
+                      <i class="bi bi-chevron-right"></i>  Read More
+                    </a>
+                </div>
+        
             </div>
         </div>
+        </section>
+    
+    <!-- jumbotron -->
+    <hr class="my-4"> 
+    <div class="container-fluid">
+      <div class="row jumbotron bg-light text-dark">
+        <div class="col-xs-12 col-sm-12 col-md-9 col-lg-9 col-xl-10">
+          <p class="lead">This is a transitional paragraph. Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic odio atque quaerat in et. Quibusdam impedit quae temporibus ducimus dolorum perferendis iste sint. Quia ducimus error, amet veritatis quam rem.</p>
+        </div>
+      </div>
+    </div>
+   
+
+    <!-- cards for introduction of each project work -->
+    <section id="cards">
+      <div class="container-fluid padding">
+        <div class="row welcome text-center">
+          <div class="col-12">
+            <h1 class="display-4">The novels</h1>
+          </div>
+          <hr>
+        </div>
+      </div>
+      <!-- cards -->
+      <div class="container-fluid padding">
+        <div class="row padding">
+          <div class="col-md-4">
+            <div class="card">
+              <img class="card-img-top" src="Tess.png" alt="Tess">
+              <div class="card-body">
+                <div><h4 class="card-title">Tess</h4></div>
+                <div>
+                  <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Non dignissimos, voluptate cupiditate officiis sequi ab?</p>
+                </div>
+                <button type="button" class="btn btn-secondary" onclick="window.location.href='https://en.wikipedia.org/wiki/Tess_of_the_d%27Urbervilles'" value="Tess">Learn More</button>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card">
+              <img class="card-img-top" src="Far from the madding crowd.png" alt="Far from the Madding Crowd">
+              <div class="card-body">
+                <div><h4 class="card-title">Far from the Madding Crowd</h4></div>
+                <div>
+                  <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Non dignissimos, voluptate cupiditate officiis sequi ab?</p>
+                </div>
+                <button type="button" class="btn btn-secondary" onclick="window.location.href='https://en.wikipedia.org/wiki/Far_from_the_Madding_Crowd'" value="Tess">Learn More</button>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card">
+              <img class="card-img-top" src="Jude.png" alt="Jude the Obscure">
+              <div class="card-body">
+                <div><h4 class="card-title">Jude the Obscure</h4></div>
+                <div>
+                  <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Non dignissimos, voluptate cupiditate officiis sequi ab?</p>
+                </div> 
+                <button type="button" class="btn btn-secondary" onclick="window.location.href='https://en.wikipedia.org/wiki/Jude_the_Obscure'" value="Tess">Learn More</button>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card">
+              <img class="card-img-top" src="Mayor of the Caterbridge.png" alt="Mayor of the caseterbridge">
+              <div class="card-body">
+                <div><h4 class="card-title">Mayor of the Casterbridge</h4></div>
+                <div>
+                  <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Non dignissimos, voluptate cupiditate officiis sequi ab?</p>
+                </div>
+                <button type="button" class="btn btn-secondary" onclick="window.location.href='https://en.wikipedia.org/wiki/The_Mayor_of_Casterbridge'" value="Tess">Learn More</button>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card">
+              <img class="card-img-top" src="the return of the native.png" alt="The return of the Native">
+              <div class="card-body">
+                <div><h4 class="card-title">The Return of the Native</h4></div>
+                <div>
+                  <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Non dignissimos, voluptate cupiditate officiis sequi ab?</p>
+                </div>
+                <button type="button" class="btn btn-secondary" onclick="window.location.href='https://en.wikipedia.org/wiki/The_Return_of_the_Native'" value="Tess">Learn More</button>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card">
+              <img class="card-img-top" src="Tess.png" alt="Tess">
+              <div class="card-body">
+                <div><h4 class="card-title">To be continued</h4></div>
+                <div>
+                  <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Non dignissimos, voluptate cupiditate officiis sequi ab?</p>
+                </div> 
+                <button type="button" class="btn btn-secondary" onclick="window.location.href='https://en.wikipedia.org/wiki/Thomas_Hardy'" value="Tess">Learn More</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
     </section>
 
-    <!-- carousel for introduction of each project work -->
-    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
-        <div class="carousel-indicators">
-          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
-          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
-        </div>
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <img src="Winter1.jpeg" class="d-block w-100" alt="slide1 for part1">
-            <div class="carousel-caption d-none d-md-block">
-              <h5>First slide label for section1</h5>
-              <p>Some representative placeholder content for the first slide.</p>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <img src="Winter2.jpeg" class="d-block w-100" alt="slide2 for part2">
-            <div class="carousel-caption d-none d-md-block">
-              <h5>Second slide label for section2</h5>
-              <p>Some representative placeholder content for the second slide.</p>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <img src="Winter3.jpeg" class="d-block w-100" alt="slide3 for part3">
-            <div class="carousel-caption d-none d-md-block">
-              <h5>Third slide label for section3</h5>
-              <p>Some representative placeholder content for the third slide.</p>
-            </div>
-          </div>
-        </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
-      </div>
-
-
-    <!-- accordian for the tech presentation -->
+    <!-- accordian for the novel analysis -->
     <div class="accordion" id="accordionPanelsStayOpenExample">
         <div class="accordion-item">
           <h2 class="accordion-header" id="panelsStayOpen-headingOne">
             <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
-              Accordion Item #1
+              Novel1:Tess
             </button>
           </h2>
           <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show" aria-labelledby="panelsStayOpen-headingOne">
             <div class="accordion-body">
-              <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+              <strong>This is the stylometry analysis for the first novel.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
             </div>
           </div>
         </div>
@@ -151,94 +266,56 @@
           </div>
         </div>
         <div class="accordion-item">
-            <h2 class="accordion-header" id="panelsStayOpen-headingFour">
-              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
-                Accordion Item #4
-              </button>
-            </h2>
-            <div id="panelsStayOpen-collapseFour" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingThree">
-              <div class="accordion-body">
-                <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
-              </div>
+          <h2 class="accordion-header" id="panelsStayOpen-headingFour">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseFour" aria-expanded="true" aria-controls="panelsStayOpen-collapseFour">
+              Accordion Item #4
+            </button>
+          </h2>
+          <div id="panelsStayOpen-collapseFour" class="accordion-collapse collapse show" aria-labelledby="panelsStayOpen-headingFour">
+            <div class="accordion-body">
+              <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
             </div>
           </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="panelsStayOpen-headingFive">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseFive" aria-expanded="true" aria-controls="panelsStayOpen-collapseFive">
+              Accordion Item #5
+            </button>
+          </h2>
+          <div id="panelsStayOpen-collapseFive" class="accordion-collapse collapse show" aria-labelledby="panelsStayOpen-headingFive">
+            <div class="accordion-body">
+              <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+            </div>
+          </div>
+        </div>
       </div>
       
     
     
-<!-- basic grid for technical peer review -->
-    <div id = "Grid" class="container-lg my-5">
-            <h2>basic grid</h2>
-            <div class="row">
-                <!-- default is equal space  col-6 take up to 6 columns(could be 1-12) in width-->
-                <!-- col-sm-4 4 columns in width for small scree, 3 columns in width for large screen -->
-                <div class="col-sm-4 col-lg-6"><div class="p-5 bg-light text-light">col1</div>
-                </div>
-                <div class="col-sm-4 col-lg-6"><div class="p-5 bg-light text-light">col1</div>
-                </div>
-                <div class="col-sm-4 col-lg-6"><div class="p-5 bg-light text-light">col1</div>
-                </div>
-                <div class="col-sm-4 col-lg-6"><div class="p-5 bg-light text-light">col1</div>
-                </div>
-            </div>
+<!-- basic grid for code review -->
+    
 
-    </div>
+    <section id="code">
+      <div id = "Grid" class="container-lg my-5">
+        <h2>Code Review</h2>
+        <div class="row">
+            <!-- default is equal space  col-6 take up to 6 columns(could be 1-12) in width-->
+            <!-- col-sm-4 4 columns in width for small scree, 3 columns in width for large screen -->
+            <div class="col-sm-4 col-lg-6"><div class="p-5 bg-light text-light">col1</div>
+            </div>
+            <div class="col-sm-4 col-lg-6"><div class="p-5 bg-light text-light">col1</div>
+            </div>
+            <div class="col-sm-4 col-lg-6"><div class="p-5 bg-light text-light">col1</div>
+            </div>
+            <div class="col-sm-4 col-lg-6"><div class="p-5 bg-light text-light">col1</div>
+            </div>
+        </div>
 
-    <div id = "Section3-undefined" class="container-lg my-5">
-      <h2>Section3 for homework</h2>
-      <div class="row">
-          <div class="col-sm-4 col-lg-6">
-            <div id="button_series">
-              <div class="container mt-10" id = "currentminute">
-              <p id="minute">The current minute will display here when click the button below.</p>
-              <button type="button" class="btn btn-secondary" onclick="showMinute()">Click</button>
-            </div>
-            <div class="class mt-10" id = "lastItem">
-              <p id = "lastItem1">This is a button for onclick event.</p>
-              <button type="button" class="btn btn-secondary" onclick="lastItem()">ButtonCB</button>
-            </div>
-            <div class="class mt-10" id = "lastItem2">
-              <p id = "lastItem3">This is a button for watermelon.</p>
-              <button type="button" class="btn btn-secondary" onclick="sortArrayAlpha()">ButtonCB</button>
-            </div>
-            <div class="class mt-10" id = "sort">
-              <p id = "sort1">This is a button for sort.</p>
-              <button type="button" class="btn btn-secondary" onclick="sortSimple()">ButtonSort</button>
-            </div>
-            <div class="class mt-10" id = "input">
-              <p id = "input1">This is a button for input.</p>
-              <button type="button" class="btn btn-secondary" onclick="takeInput()">ButtonPop</button>
-            </div>
-            </div>
-          </div>
-          <div class="col-sm-4 col-lg-6"><div class="p-5 bg-light text-light">
-                  <!--for test image hide -->
-                  <div class="container mt-5" >
-                      <img id="test" src="Winter1.jpeg" class ="img-fluid" alt="show and hide test">
-                      <button type="button" class="btn btn-primary" onclick="show_hide()">Hide</button>
-                  </div>
-                  <!--  for test text hide -->
-                  <div class="container mt-5" >
-                      <p id="test1" class="text-dark">Test hide and show</p>
-                      <button type="button" class="btn btn-primary" onclick="show_hide1()">Hide</button>
-                  </div>
-                  <div class="container mt-5">
-                    <button type="button" id="howdy" class="btn btn-warning" onclick="howdy()">howdy()</button>
-                  </div>
-          </div>
-          </div>
-          <div class="col-sm-4 col-lg-6">
-            <div class="p-5 bg-light text-dark">
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus, animi?</p>
-            </div>
-          </div>
-          <div class="col-sm-4 col-lg-6">
-            <div col4 class="p-5 bg-light text-dark">
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime, dolorem?</p>
-            </div>
-          </div>
       </div>
-    </div>
+      <hr>
+
+    </section>
 
     <section id = "Section4_Map">
       <div class="container mt-3">
@@ -271,44 +348,34 @@
       </div>
     </section>
 
-    <section id="Section6_OCHRE">
-      
-        <div id="nav-placeholder"></div>
-        <div class="container mt-3">
-          <div id="title"></div>
-
-          <div class="container">
-            <h3 id="projectTitle"></h3>
-            <h4 id="setTitle"></h4>
-            <div id="setDescription"></div>
-
-            <table class="table table_striped order-table" id="ochreTable">
-              <thead class="thead-dark" id="ochreTableColumns">
-                <tr>
-                  <th>Name</th>
-                  <th>Description</th>
-                </tr>
-              </thead>
-              <tbody id="ochreTableBody">
-
-              </tbody>
-            </table>
-          </div>
-          <a id ="license"></a>  
-
-        </div>
-        
-    </section>
+    <!-- connection -->
 
     <footer id="footerPlaceholder1" class="d-none d-md-block footer container-fluid mt-auto bg-dark text-light pt-5 pb-4">
       <div class="container text-center text-md-left">
         <div class="row text-center text-md-left">
           <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
-            <h5 class="text-uppercase mb-4 text-light">Uchicago</h5>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Suscipit, sint.</p>
+            <h5 class="text-uppercase mb-4 text-light">UChicago</h5>
+            <hr class="light">
+            <p>phone: 773-123-5678</p>
+            <p>email: email@uchicago.edu</p>
+            <p>addr: University of Chicago Walker Museum, 1115 E 58th St, Chicago, IL 60637</p>
+          </div>
+          <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+            <h5 class="text-uppercase mb-4 text-light">Hours</h5>
+            <hr class="light">
+            <p>Weekdays: 9:00am-5:00pm
+            </p>
+            <p>
+              Saturday: 10:00am-4:00pm
+            </p>
+            <p>
+              Sunday: closed
+            </p>
+            
           </div>
           <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
             <h5 class="text-uppercase mb-4 text-light">Links</h5>
+            <hr class="light">
             <p>
               <a href="#" class="text-white">link1</a>
             </p>
@@ -320,6 +387,11 @@
             </p>
             
           </div>
+          <div class="col-12">
+            <hr class="light">
+            <h5>&copy; BYS</h5>
+
+          </div>
 
           
 
@@ -327,9 +399,6 @@
       </div>
 
     </footer>
-
-
-    
   
 
 
